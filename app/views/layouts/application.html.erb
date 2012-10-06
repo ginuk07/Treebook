@@ -7,8 +7,23 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<h1>IGOPAL STAR</h1>
+
+
+    <div class="navbar">
+    <div class="navbar-inner">
+    <a class="brand" href="#">igopal STAR</a>
+    <ul class="nav">
+	    <li class="active"><a href="#">Home</a></li>
+	    <li class="active"><%=link_to "All Users", users_path%></li>
+	    <li class="active"><%=link_to "All Achievements", achievements_path%></li>
+	    <li><a href="#">Link</a></li>
+	    <li><a href="#">Link</a></li>
+    </ul>
+    </div>
+    </div>
+	
+
 <%= yield %>
-<p><em>Footer</em></p>
+
 </body>
 </html>

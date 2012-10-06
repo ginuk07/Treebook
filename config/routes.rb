@@ -1,4 +1,8 @@
 Igopal::Application.routes.draw do
+  resources :achievements
+
+  resources :users
+
   get "home/index"
 
   # The priority is based upon order of creation:

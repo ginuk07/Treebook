@@ -2,8 +2,8 @@ Igopal::Application.routes.draw do
   resources :achievements
 
   resources :users
-  resources :about
-  
+
+
 
 
   get "home/index"

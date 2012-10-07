@@ -2,26 +2,26 @@
 <html>
 <head>
   <title>Igopal</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag  "application", "bootstrap", :media => "all" %>
+  <%= javascript_include_tag "storyjs-embed","timeline", "bootstrap", "application" %>
+
 </head>
 <body>
+<container>
+    <div class="navbar">
+	    <div class="navbar-inner">
+	    <a class="brand" href="#">igopal</a>
+		<ul class="nav">
+			<li class = "active"><a  ><%=link_to "All Users", users_path%></a></li>
+			<li class="active"><a class="nav"><%=link_to "All Achievements", achievements_path%></a>
+			</li>
 
-
-    <div class="navbar navbar-inverse">
-    <div class="navbar-inner">
-    <a class="brand" href="#">igopal STAR</a>
-    <ul class="nav">
-
-	    <li class="active"><%=link_to "All Users", users_path%></li>
-	    <li class="active"><%=link_to "All Achievements", achievements_path%></li>
-	    <li><a href="#">Link</a></li>
-	    <li><a href="#">Link</a></li>
-    </ul>
+		</ul>
+	    </div>
     </div>
-    </div>
-	
+</container>
+
+
 
 <%= yield %>
 

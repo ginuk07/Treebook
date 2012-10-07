@@ -1,0 +1,26 @@
+// Place all the styles related to the achievements controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.achievement{
+	border-bottom: solid 4px #005580;
+	padding: 5px 0;
+}
+.achievement p {
+	margin: 4px 0;
+}
+
+.achievement.hover {
+	background: #E9E9E9;
+}
+.achievement .options{
+	display: none;
+}
+.achievement.hover .options{
+	display: inline;
+}
+.achievement div{
+	padding: 10px
+}
+.datepicker.hover{
+	
+}

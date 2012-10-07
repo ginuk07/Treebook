@@ -1,0 +1,23 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.user{
+	border-bottom: solid 4px #CC6600;
+	padding: 5px 0;
+}
+.user p {
+	margin: 4px 0;
+}
+
+.user.hover {
+	background: #E9E9E9;
+}
+.user .options{
+	display: none;
+}
+.user.hover .options{
+	display: inline;
+}
+.user div{
+	padding: 10px
+}

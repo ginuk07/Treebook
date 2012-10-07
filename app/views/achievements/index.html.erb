@@ -1,0 +1,32 @@
+
+<div id="my-timeline"><h1><%= %>@Username Portfolio</h1></div>
+<h3>Listing achievements</h3>
+
+<% @achievements.each do |achievement| %>
+<div class="achievement"
+    <strong><%= achievement.headline %></strong>
+    <p><%= achievement.start_date %> to 
+    <%= achievement.end_date %></p>
+    <em><%= achievement.notes %></em>
+    <div class="meta">
+      <%= link_to time_ago_in_words(achievement.created_at) + " ago", achievement %>  
+
+        <span class="options" :visible = false>      
+      <p><%= link_to 'Show', achievement %>|<%= link_to 'Edit', edit_achievement_path(achievement) %>|
+        <%= link_to 'Destroy', achievement, method: :delete, data: { confirm: 'Are you sure you want to delete this entry?' } %>
+      </p>
+    <div class="btn-group">
+      <button class="btn">Show</button>
+      <button class="btn">Edit</button>
+      <button class="btn">Delete</button>
+    </div>
+      </span>
+    </div>
+  </div>
+<% end %>
+
+
+
+<br />
+
+<button><%= link_to 'New Achievement', new_achievement_path %></button>

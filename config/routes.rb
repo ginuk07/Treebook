@@ -1,4 +1,6 @@
 Igopal::Application.routes.draw do
+  resources :organizations
+
   resources :achievements
 
   resources :users
